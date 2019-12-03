@@ -7,7 +7,7 @@ ul.off-canvas-list li label{background-color: #09263c;}
 .left-off-canvas-menu{ background-color: #112E45;}
 ul.off-canvas-list li a{ border-bottom:solid 1px #0e385a;}
 ul.off-canvas-list li a:hover{background: #335a79;}
-.top-bar,.tab-bar{ background-color: #112E45; height: 50px;}
+.top-bar,.tab-bar{ background-color: #333333; height: 50px;}
 
 .tab-bar .menu-icon{ width: 100%;}
 .row{ max-width: 1100px;}
@@ -24,13 +24,13 @@ ul.off-canvas-list li a:hover{background: #335a79;}
 }
 .sidebar .side-nav a{ font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;}
 .sidebar .side-nav li a{ padding: 4px 4px;}
-.sidebar .side-nav li.side-title span{ display: inline-block; padding: 10px 0; margin-top: 40px; color:#0e83cd; border-top: solid 1px #e3e3e3; font-weight: bold; font-size: 1.2em;}
+.sidebar .side-nav li.side-title span{ display: inline-block; padding: 10px 0; margin-top: 40px; color:#08b; border-top: solid 1px #e3e3e3; font-weight: bold; font-size: 1.4em;}
 
 
 .sidebar .side-nav li a{  color: #444;}
-.sidebar .side-nav li a:hover{color: #0e83cd; background:none;}
+.sidebar .side-nav li a:hover{color: #08b; background:none;}
 .sidebar .side-nav li.active > a:first-child {
-    color: #0e83cd;
+    color: #08b;
 }
 
 .markdown-toc ul,.markdown-toc li {
@@ -49,10 +49,10 @@ ul.off-canvas-list li a:hover{background: #335a79;}
 .markdown-toc a{ font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;}
 .markdown-toc li a{ padding: 4px 0px; color: #666; font-size: 0.9em;}
 .markdown-toc li.side-title{ padding-bottom: 6px;}
-.markdown-toc li.side-title span{ padding: 10px 0;  color:#0e83cd;  font-size: 1.0em;border-top: solid 1px #e3e3e3; }
+.markdown-toc li.side-title span{ padding: 10px 0;  color:#08b;  font-size: 1.0em;border-top: solid 1px #e3e3e3; }
 
 .markdown-toc ul ul{padding-left: 16px;}
-.markdown-toc li a:hover{color: #0e83cd; background:none;}
+.markdown-toc li a:hover{color: #08b; background:none;}
 
 
 .markdown-body{ margin-top: 54px;}
@@ -72,6 +72,7 @@ ul.off-canvas-list li a:hover{background: #335a79;}
 
 .markdown-body a {
   background: transparent;
+  color: #08b;
 }
 
 .markdown-body a:active,
@@ -79,8 +80,29 @@ ul.off-canvas-list li a:hover{background: #335a79;}
   outline: 0;
 }
 
+mark {
+  color: #fff;
+  background-color: #d14;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
 .markdown-body strong {
   font-weight: bold;
+  color: #d14;
+}
+
+.markdown-body em {
+  color: #088;
+}
+
+.markdown-body del {
+  color: #999;
+}
+
+.markdown-body u {
+  color: #e60;
 }
 
 .markdown-body h1 {
@@ -149,7 +171,7 @@ ul.off-canvas-list li a:hover{background: #335a79;}
 }
 
 .markdown-body a {
-  color: #4183c4;
+  color: #08b;
   text-decoration: none;
 }
 
@@ -214,8 +236,13 @@ ul.off-canvas-list li a:hover{background: #335a79;}
   font-size: 11px;
 }
 
+.markdown-body blockquote p {
+  color: #999;
+}
 .markdown-body blockquote {
   margin: 0;
+  color: #999;
+  text-shadow: 4px 4px 4px #eee;
 }
 
 .markdown-body ul,
@@ -339,6 +366,7 @@ ul.off-canvas-list li a:hover{background: #335a79;}
   font-size: 2.25em;
   line-height: 1.2;
   border-bottom: 1px solid #eee;
+  color: #111;
 }
 
 .markdown-body h2 {
@@ -346,24 +374,28 @@ ul.off-canvas-list li a:hover{background: #335a79;}
   font-size: 1.75em;
   line-height: 1.225;
   border-bottom: 1px solid #eee;
+  color: #333;
 }
 
 .markdown-body h3 {
   font-size: 1.5em;
   line-height: 1.43;
+  color: #555;
 }
 
 .markdown-body h4 {
   font-size: 1.25em;
+  color: #777;
 }
 
 .markdown-body h5 {
   font-size: 1em;
+  color: #999;
 }
 
 .markdown-body h6 {
   font-size: 1em;
-  color: #777;
+  color: #bbb;
 }
 
 .markdown-body p,
@@ -375,10 +407,11 @@ ul.off-canvas-list li a:hover{background: #335a79;}
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
+  color: #333;
 }
 
 .markdown-body hr {
-  height: 4px;
+  height: 2px;
   padding: 0;
   margin: 16px 0;
   background-color: #e7e7e7;
@@ -464,6 +497,7 @@ ul.off-canvas-list li a:hover{background: #335a79;}
   max-width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-height: 200px;
 }
 
 .markdown-body code {
